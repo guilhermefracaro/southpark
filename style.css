@@ -1,0 +1,63 @@
+@font-face {
+    font-family: southPark;
+    src: url(south\ park.ttf);
+}
+
+body {
+    font-family: 'southPark', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 2.5rem;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.character-card {
+    width: calc(20% - 40px);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+}
+
+.character-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.character-card p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .character-card {
+        width: calc(33.33% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .character-card {
+        width: calc(100% - 40px);
+    }
+}
